@@ -13,6 +13,7 @@ class Rook(ChessPiece):
     def __init__(self,x,y,color,board):
         ChessPiece.__init__(self,x,y,color)
         self.symbol = "R"
+        self.count = 0
         board[self.position_x][self.position_y] = self.symbol
 
 class King(ChessPiece):
