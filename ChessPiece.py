@@ -40,7 +40,7 @@ class Pawn(ChessPiece):
         self.symbol = "P"
         self.count = 0
         board[self.position_x][self.position_y] = self.symbol
-
+#
 class Queen(ChessPiece):
     def __init__(self,x,y,color,board):
         ChessPiece.__init__(self,x,y,color)

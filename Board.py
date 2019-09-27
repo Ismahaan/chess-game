@@ -24,7 +24,7 @@ class Board:
     Pawnn=[]
     for x in range(8):
         Pawnn.append(Pawn(1,x,'w',board))
-
+#
     Rookz1 = Rook(7,0,'z',board)
     Rookz2 = Rook(7,7,'z',board)
     Knightz1 = Knight(7,1,'z',board)
