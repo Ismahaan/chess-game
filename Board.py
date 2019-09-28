@@ -6,7 +6,6 @@ from ChessPiece import King
 from ChessPiece import Bishop
 from ChessPiece import Pawn
 
-
 class Board:
     board = np.full([8,8],'0' ,dtype = object)
     Rook1 = Rook(0,0,'w',board)
@@ -19,12 +18,13 @@ class Board:
     Queenz = Queen(7,3,'z',board)
     King = King(0,3,'w',board)
     Queen = Queen(0,4,'w',board)
+  
    
    
     Pawnn=[]
     for x in range(8):
         Pawnn.append(Pawn(1,x,'w',board))
-#
+
     Rookz1 = Rook(7,0,'z',board)
     Rookz2 = Rook(7,7,'z',board)
     Knightz1 = Knight(7,1,'z',board)
@@ -37,3 +37,4 @@ class Board:
     for x in range(8):
         Pawnz.append(Pawn(6,x,'z',board))
     print(board)
+   

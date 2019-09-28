@@ -20,7 +20,7 @@ class King(ChessPiece):
     def __init__(self,x,y,color,board):
         ChessPiece.__init__(self,x,y,color)
         self.symbol = "K"
-        # self.count = 0
+        self.count = 0
         board[self.position_x][self.position_y] = self.symbol
 
 class Bishop(ChessPiece):
@@ -38,7 +38,7 @@ class Knight(ChessPiece):
 class Pawn(ChessPiece):
     def __init__(self,x,y,color,board):
         ChessPiece.__init__(self,x,y,color)
-        self.symbol = "P"
+        self.symbol = "0"
         self.count = 0
         board[self.position_x][self.position_y] = self.symbol
 #
