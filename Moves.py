@@ -9,22 +9,17 @@ class Moves:
         stukken = ''
        
 
-        for y in  range(7):
-            if board.board[pos_x][pos_y+(y+1)] == '0':
+        for x in  range(7):
+            if board.board[pos_x + (x+1)][pos_y] == '0':
                 bezet = False
-                possibleMoves.append([pos_x ,pos_y+(y+1)])
-                # print(possibleMoves) 
+                possibleMoves.append([pos_x+(x+1) ,pos_y])
+            # elif board.board[pos_x + (x+1)][pos_y].color != Rook.self.color:
+            #     possibleMoves.append([pos_x+(x+1) ,pos_y])
+            else:
+                break
         return possibleMoves
     
 #verzonnen door Ismahaan!!!!!
 iets = Moves()
 print (iets.RookMove())
-    #     for x in  range(8):
-    #        board.board[x][pos_y]
-    #    do while (collision_horizontal == false):
-            
-    #        pass
-
-    #     do while (collision_verticale ==false):
-
-    #         pass
+    

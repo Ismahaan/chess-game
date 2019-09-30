@@ -7,7 +7,8 @@ from ChessPiece import Bishop
 from ChessPiece import Pawn
 
 class Board:
-    board = np.full([8,8],'0' ,dtype = object)
+    
+    board = np.full([8,8],'0',dtype = object)
     Rook1 = Rook(0,0,'w',board)
     Rook2 = Rook(0,7,'w',board)
     Knight1 = Knight(0,1,'w',board)
@@ -18,12 +19,12 @@ class Board:
     Queenz = Queen(7,3,'z',board)
     King = King(0,3,'w',board)
     Queen = Queen(0,4,'w',board)
-  
+    
    
    
     Pawnn=[]
-    for x in range(8):
-        Pawnn.append(Pawn(1,x,'w',board))
+    for y in range(8):
+        Pawnn.append(Pawn(1,y,'w',board))
 
     Rookz1 = Rook(7,0,'z',board)
     Rookz2 = Rook(7,7,'z',board)
