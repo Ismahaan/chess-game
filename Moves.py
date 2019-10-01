@@ -1,4 +1,11 @@
 from Board import Board as board
+from ChessPiece import Queen
+from ChessPiece import Knight
+from ChessPiece import Rook
+from ChessPiece import King
+from ChessPiece import Bishop
+from ChessPiece import Pawn
+
 class Moves:
     def RookMove(self):
         Rookplay = board.Rook1 
@@ -13,8 +20,9 @@ class Moves:
             if board.board[pos_x + (x+1)][pos_y] == '0':
                 bezet = False
                 possibleMoves.append([pos_x+(x+1) ,pos_y])
-            # elif board.board[pos_x + (x+1)][pos_y].color != Rook.self.color:
-            #     possibleMoves.append([pos_x+(x+1) ,pos_y])
+            elif board.board[pos_x + (x+1)][pos_y].color != Rookplay.color:
+                 possibleMoves.append([pos_x+(x+1) ,pos_y])
+                 print(Rookplay.color)
             else:
                 break
         return possibleMoves
@@ -22,4 +30,12 @@ class Moves:
 #verzonnen door Ismahaan!!!!!
 iets = Moves()
 print (iets.RookMove())
-    
+    #     for x in  range(8):
+    #        board.board[x][pos_y]
+    #    do while (collision_horizontal == false):
+            
+    #        pass
+
+    #     do while (collision_verticale ==false):
+
+    #         pass
