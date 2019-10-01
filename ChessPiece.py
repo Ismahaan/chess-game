@@ -50,4 +50,4 @@ class Queen(ChessPiece):
         board[self.position_x][self.position_y] = self.symbol
 
 #blabla test
-#1234457854433
+#1234457854433484848
