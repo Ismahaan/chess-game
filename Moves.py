@@ -12,17 +12,13 @@ class Moves:
         pos_x = Rookplay.position_x 
         pos_y = Rookplay.position_y 
         possibleMoves = []
-        bezet = False
-        stukken = ''
-       
 
         for x in  range(7):
             if board.board[pos_x + (x+1)][pos_y] == '0':
-                bezet = False
                 possibleMoves.append([pos_x+(x+1) ,pos_y])
-            elif board.board[pos_x + (x+1)][pos_y].color != Rookplay.color:
-                 possibleMoves.append([pos_x+(x+1) ,pos_y])
-                 print(Rookplay.color)
+            elif board.board2[pos_x + (x+1)][pos_y].color != Rookplay.color:
+                possibleMoves.append([pos_x+(x+1) ,pos_y])
+                break
             else:
                 break
         return possibleMoves
