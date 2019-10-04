@@ -26,12 +26,3 @@ class Moves:
 #verzonnen door Ismahaan!!!!!
 iets = Moves()
 print (iets.RookMove())
-    #     for x in  range(8):
-    #        board.board[x][pos_y]
-    #    do while (collision_horizontal == false):
-            
-    #        pass
-
-    #     do while (collision_verticale ==false):
-
-    #         pass

@@ -21,8 +21,6 @@ class Board:
     King = King(0,3,'w', "K",board,board2)
     Queen = Queen(0,4,'w', "Q",board,board2)
     
-   
-   
     Pawnn=[]
     for y in range(8):
         Pawnn.append(Pawn(1,y,'w',"P",board,board2))
