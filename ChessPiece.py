@@ -50,3 +50,5 @@ class Queen(ChessPiece):
         ChessPiece.__init__(self,x,y,color)
         self.symbol = "Q"
         board[self.position_x][self.position_y] = self.symbol
+
+#blabla test
