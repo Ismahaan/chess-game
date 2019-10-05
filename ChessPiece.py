@@ -10,12 +10,14 @@ class ChessPiece(metaclass=ABCMeta):
         self.color = color
    
 class Rook(ChessPiece):
+    
     def __init__(self,x,y,color,board):
         ChessPiece.__init__(self,x,y,color)
         self.symbol = "R"
         self.count = 0
+        self.color = 'red'
         board[self.position_x][self.position_y] = self.symbol
-        board2[self.position_x][self.position_y] = self
+        #board2[self.position_x][self.position_y] = self
 
 class King(ChessPiece):
     def __init__(self,x,y,color,board):
